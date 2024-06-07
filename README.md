@@ -2,7 +2,7 @@
 
 ## causal inference series
 
-fitting linear regression models is a trivial 3 lines of code, but what are we actually doing? from a pure ML point of view, you're mainly focused on building a model `f` that minimizes the difference between predicted and observed values, probably to build some kind of decision system `d`. 
+fitting linear regression models is 3 lines of code, but what are we actually doing? from a pure ML point of view, you're mainly focused on building a model `f` that minimizes the difference between predicted and observed values, probably to build some kind of decision system `d`. 
 
 `predicted outcome = f(data)`
 
