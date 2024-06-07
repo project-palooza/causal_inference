@@ -24,13 +24,13 @@ reminder: correlation (more generally, *association*) is not causation
 
 ...unless...maybe.. it is.
 
-suppose we have an intervention/experimental condition $ X \in \{0,1\}$
+suppose we have an intervention/experimental condition $X \in \{0,1\}$
 
-and a numeric outcome variable $ Y $
+and a numeric outcome variable $Y$
 
 deep down, we want to believe that receiving the intervention makes $Y$ increase.
 
-we can easily calculate the difference between average $ Y $ under intervention ($X = 1$) vs. no intervention ($X = 0$).
+we can easily calculate the difference between average $Y$ under intervention ($X = 1$) vs. no intervention ($X = 0$).
 
 `avg(Y | X = 1) - avg(Y | X = 0)`
 
