@@ -28,7 +28,7 @@ suppose we have an intervention/experimental condition $X \in \{0,1\}$
 
 and a numeric outcome variable $Y$
 
-deep down, we want to believe that receiving the intervention makes $Y$ increase.
+deep down, we want to believe that receiving the intervention makes $Y$ increase (or decrease, it depends what $Y$ is).
 
 we can easily calculate the difference between average $Y$ under intervention ($X = 1$) vs. no intervention ($X = 0$).
 
