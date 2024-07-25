@@ -1,1 +1,6 @@
-*.csv.DS_Store
+
+*.csv
+__pycache__/
+dev.ipynb
+notebooks/.ipynb_checkpoints/
+
