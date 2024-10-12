@@ -48,3 +48,12 @@ def hospital_treatment(n=80):
     
     return hospital
 
+if __name__ == "__main__":
+    import sys
+    dataset_name = sys.argv[1]
+    if dataset_name == "collections":
+        data = email_collections()
+        data.to_csv(f"../../data/{dataset_name}.csv",index = False)
+    else:
+        data = hospital_treatment()
+        data.to_csv(f"../../data/{dataset_name}.csv",index = False)

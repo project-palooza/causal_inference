@@ -2,6 +2,40 @@
 
 ## causal inference series
 
+### recap of topics covered in 2 months
+
+- layed the groundwork by comparing causal inference to other popular forms of modeling, in particular we pointed out the differences in the mindsets between causal inf and ml practitioners.
+- deep dive: start with a definition of "causal effect of an intervention". we noted to problems with simply taking difference between the treated group mean and the untreated group mean. 
+
+1. are they comparable? (are we bias free?) 
+
+to resolve this we use randomized assignment of the treatment.
+
+2. how do we know that the difference we observe is not due to randomness.
+
+hypothesis testing (e.g. t-test, or a proportions z test)
+
+we can protect ourselves against being fooled by randomness by using good experimental design - a component of which is statistical power. sample size is an input into power calculations.
+
+power is `P(reject H0 | H0 is false)`
+
+power calculations depend on the hypothesis we want to use, but the inputs are the same across hypothesis tests
+
+`power_calculator(sample_size, effect_size, alpha)`
+
+- hypothesis testing / ab testing is a luxury. it's the gold standard of causal inference and we are not always so lucky.
+- observational methods ---> regression
+
+- we started with simple regressions
+- we talked about controls (including more variables in your regression)
+- interaction effects
+- selection bias
+
+- today i'd like to show you a very cool technique 
+
+
+### high level pov on causal inference
+
 fitting linear regression models is 3 lines of code, but what are we actually doing? from a pure ML point of view, you're mainly focused on building a model `f` that minimizes the difference between predicted and observed values, probably to build some kind of decision system `d`. 
 
 `predicted outcome = f(data)`
